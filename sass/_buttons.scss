@@ -1,0 +1,34 @@
+// mixins botones de nav, pages y footer
+
+@mixin btn-color ($texto, $fondo) {
+    display: inline-block;
+    padding: 5px 20px;
+    border: 2px solid;
+    text-decoration: none;
+    border-radius: 25px;
+    color: $texto;
+    background: $fondo;
+    
+  }
+  
+  .btn--basenav {
+    @include btn-color (rgb(255, 255, 255), rgb(6, 34, 149));
+    font-size: 17px;
+    &:hover {
+      @include btn-color (rgb(13, 0, 190), rgb(255, 255, 255));
+    }
+  }
+  .btn--basepage {
+    @include btn-color (rgb(0, 0, 0), rgb(154, 149, 18));
+    font-size: 17px;
+    &:hover {
+      @include btn-color (rgb(0, 0, 0), rgb(236, 229, 25));
+    }
+  }
+  .btn--basefoot {
+    @include btn-color (rgb(0, 0, 0), rgb(0, 67, 114));
+    font-size: 22px;
+    &:hover {
+      @include btn-color (rgb(0, 0, 0), rgb(0, 129, 235));
+    }
+  }
