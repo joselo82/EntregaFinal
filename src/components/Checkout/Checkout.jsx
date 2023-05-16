@@ -60,11 +60,11 @@ export const Checkout = () => {
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Email</label>
-                                <input type="email" className="form-control" name="password" id="password" required />
+                                <input type="email" className="form-control" name="email" id="email" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="email" className="form-label">Repeat Email</label>
-                                <input type="email" className="form-control" name="econfirm_password" id="confirm_password" required />
+                                <input type="email" className="form-control" name="repeatEmail" id="repeatEmail" required />
                             </div>
                             <div className="mb-3">
                                 <label htmlFor="dni" className="form-label">Identification Number</label>
